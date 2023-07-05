@@ -70,6 +70,30 @@ export default function setupFormatters(
     .registerValue(
       'DURATION_SUB',
       createDurationFormatter({ formatSubMilliseconds: true }),
+    )
+    .registerValue(
+      'CURRENCY_INDIA',
+      createD3NumberFormatter({
+          locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['₹', ''],
+        },
+        formatString: '$,d',
+      }),
+    )
+    .registerValue(
+    'CURRENCY_INDIA_INR',
+      createD3NumberFormatter({
+          locale: {
+          decimal: '.',
+          thousands: ',',
+          grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+          currency: ['Rs.', ''],
+        },
+        formatString: '$,d',
+      }),
     );
 
   getTimeFormatterRegistry()
