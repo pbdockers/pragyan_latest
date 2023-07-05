@@ -377,7 +377,12 @@ class D3Format(TypedDict, total=False):
     currency: list[str]
 
 
-D3_FORMAT: D3Format = {}
+D3_FORMAT: D3Format = {
+    "decimal": '.',
+    "thousands": ',',
+    "grouping": [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    "currency": ['₹', ''],
+}
 
 CURRENCIES = ["USD", "EUR", "GBP", "INR", "MXN", "JPY", "CNY"]
 
