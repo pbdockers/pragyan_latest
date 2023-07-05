@@ -30,22 +30,48 @@ function formatValue(value: number) {
     return '0';
   }
   const absoluteValue = Math.abs(value);
-  if (absoluteValue >= 1000) {
-    // Normal human being are more familiar
-    // with billion (B) that giga (G)
-    return siFormatter(value).replace('G', 'B');
+  if (absoluteValue >= 10000000) {
+    // Convert to crores (Cr)
+    return `${float2PointFormatter(value / 10000000)} Crore`;
   }
-  if (absoluteValue >= 1) {
-    return float2PointFormatter(value);
+  if (absoluteValue >= 100000) {
+    // Convert to lakhs (L)
+    return `${float2PointFormatter(value / 100000)} Lakh`;
+  }
+  if (absoluteValue >= 1000) {
+    // Convert to thousands (k)
+    return `${float2PointFormatter(value / 1000)}Thous`;
   }
   if (absoluteValue >= 0.001) {
     return float4PointFormatter(value);
   }
   if (absoluteValue > 0.000001) {
-    return `${siFormatter(value * 1000000)}µ`;
+    return `${float2PointFormatter(value * 1000000)} µ`;
   }
-  return siFormatter(value);
+  return float2PointFormatter(value);
 }
+
+// function formatValue(value: number) {
+//   if (value === 0) {
+//     return '0';
+//   }
+//   const absoluteValue = Math.abs(value);
+//   if (absoluteValue >= 1000) {
+//     // Normal human being are more familiar
+//     // with billion (B) that giga (G)
+//     return siFormatter(value).replace('G', 'B');
+//   }
+//   if (absoluteValue >= 1) {
+//     return float2PointFormatter(value);
+//   }
+//   if (absoluteValue >= 0.001) {
+//     return float4PointFormatter(value);
+//   }
+//   if (absoluteValue > 0.000001) {
+//     return `${siFormatter(value * 1000000)}µ`;
+//   }
+//   return siFormatter(value);
+// }
 
 export default function createSmartNumberFormatter(
   config: {
