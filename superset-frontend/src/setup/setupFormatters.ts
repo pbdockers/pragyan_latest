@@ -18,6 +18,7 @@
  */
 import {
   createDurationFormatter,
+  createD3NumberFormatter,
   getNumberFormatter,
   getNumberFormatterRegistry,
   NumberFormats,
