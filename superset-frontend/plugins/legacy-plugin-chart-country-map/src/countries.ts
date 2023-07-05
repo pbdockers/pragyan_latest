@@ -131,7 +131,7 @@ import maharashtra from './countries/maharashtra.geojson';
 import telangana from './countries/telangana.geojson';
 import haryana from './countries/haryana.geojson';
 import west_bengal from './countries/westbengal.geojson';
-import delhi from './countries/delhi.geojson';
+
 
 
 
@@ -250,7 +250,6 @@ export const countries = {
   telangana,
   haryana,
   west_bengal,
-  delhi,
 
 };
 
