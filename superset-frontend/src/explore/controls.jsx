@@ -87,6 +87,8 @@ export const D3_FORMAT_OPTIONS = [
   // [',.3f', ',.3f (12345.432 => 12,345.432)'],
   // ['+,', '+, (12345.432 => +12,345.432)'],
   ['$,.2f', '$,.2f (12345.432 => $12,345.43)'],
+  ['CURRENCY_INDIA', '₹,d (12345.432 => ₹12,345)'],
+  ['CURRENCY_INDIA_INR', 'Rs.,d (12345.432 => Rs.12,345)'],
   ['DURATION', t('Duration in ms (66000 => 1m 6s)')],
   ['DURATION_SUB', t('Duration in ms (100.40008 => 100ms 400µs 80ns)')],
 ];
