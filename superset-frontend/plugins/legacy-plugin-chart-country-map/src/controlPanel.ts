@@ -38,10 +38,10 @@ const config: ControlPanelConfig = {
             name: 'select_country',
             config: {
               type: 'SelectControl',
-              label: t('Country'),
+              label: t('COUNTRY/STATE'),
               default: null,
               choices: countryOptions,
-              description: t('Which country to plot the map for?'),
+              description: t('Which state to plot the map for?'),
               validators: [validateNonEmpty],
             },
           },
@@ -76,9 +76,9 @@ const config: ControlPanelConfig = {
   ],
   controlOverrides: {
     entity: {
-      label: t('ISO 3166-2 Codes'),
+      label: t('STATE/DISTRICT COLUMN'),
       description: t(
-        'Column containing ISO 3166-2 codes of region/province/department in your table.',
+        'Please select state/district field from your table.',
       ),
     },
     metric: {
