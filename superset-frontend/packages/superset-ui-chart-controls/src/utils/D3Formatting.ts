@@ -54,7 +54,7 @@ const d3Formatted: [string, string][] = [
 // input choices & options
 export const D3_FORMAT_OPTIONS: [string, string][] = [
   [NumberFormats.SMART_NUMBER, t('Indian(Thous,Lakh,Crore)')],
-  [NumberFormats.smartNo, t('Indian(k,L,Cr)')],
+  // [NumberFormats.smartNo, t('Indian(k,L,Cr)')],
   ['~g', t('Original value')],
   [',d', 'Numeric'],
   // ['.1s', '.1s (12345.432 => 10k)'],
