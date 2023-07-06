@@ -42,10 +42,6 @@ export default class NumberFormatterRegistry extends RegistryWithDefaultKey<
       createSmartNumberFormatter(),
     );
     this.registerValue(
-      NumberFormats.smartNo,
-      createsmartNoFormatter(),
-    );
-    this.registerValue(
       NumberFormats.SMART_NUMBER_SIGNED,
       createSmartNumberFormatter({ signed: true }),
     );
