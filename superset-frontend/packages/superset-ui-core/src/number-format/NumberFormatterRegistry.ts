@@ -21,7 +21,6 @@ import { RegistryWithDefaultKey, OverwritePolicy } from '../models';
 import { DEFAULT_D3_FORMAT } from './D3FormatConfig';
 import createD3NumberFormatter from './factories/createD3NumberFormatter';
 import createSmartNumberFormatter from './factories/createSmartNumberFormatter';
-import createsmartNoFormatter from './factories/createsmartNoFormatter';
 import NumberFormats from './NumberFormats';
 import NumberFormatter from './NumberFormatter';
 
