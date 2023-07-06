@@ -54,8 +54,6 @@ const SMART_NUMBER = 'SMART_NUMBER';
 const SMART_NUMBER_SIGNED = 'SMART_NUMBER_SIGNED';
 const OVER_MAX_HIDDEN = 'OVER_MAX_HIDDEN';
 
-const smartNo = 'Indian';
-
 
 const NumberFormats = {
   DOLLAR,
@@ -87,7 +85,6 @@ const NumberFormats = {
   SMART_NUMBER,
   SMART_NUMBER_SIGNED,
   OVER_MAX_HIDDEN,
-  smartNo,
 };
 
 export default NumberFormats;
