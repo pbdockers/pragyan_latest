@@ -78,7 +78,6 @@ export const D3_FORMAT_OPTIONS = [
   ['SMART_NUMBER', t('Adaptive formatting')],
   ['smartNo','Indian'],
   ['~g', t('Original value')],
-  [NumberFormats.INRunits, t('INR_UNITS')],
   [',d', ',d (12345.432 => 12,345)'],
   // ['.1s', '.1s (12345.432 => 10k)'],
   // ['.3s', '.3s (12345.432 => 12.3k)'],
