@@ -22,7 +22,6 @@ import { DEFAULT_D3_FORMAT } from './D3FormatConfig';
 import createD3NumberFormatter from './factories/createD3NumberFormatter';
 import createSmartNumberFormatter from './factories/createSmartNumberFormatter';
 import createsmartNoFormatter from './factories/createsmartNoFormatter';
-import createINRwithUnit from './factories/createINRwithUnit';
 import NumberFormats from './NumberFormats';
 import NumberFormatter from './NumberFormatter';
 
@@ -45,10 +44,6 @@ export default class NumberFormatterRegistry extends RegistryWithDefaultKey<
     this.registerValue(
       NumberFormats.smartNo,
       createsmartNoFormatter(),
-    );
-    this.registerValue(
-      NumberFormats.INRunits,
-      createINRwithUnit(),
     );
     this.registerValue(
       NumberFormats.SMART_NUMBER_SIGNED,
